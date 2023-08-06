@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #101010;
+  --foreground: #C2C2D2;
+  --heading-gradient: linear-gradient(90deg, #ECECFF 0%, rgba(236, 236, 255, 0.770052) 96.6%, rgba(255, 255, 255, 0.75) 105.02%);
+  
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+h1, h2 {
+  background: var(--heading-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* ------------------- HERO SECTION CIRCLE ANIMATION ------------------ */
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.circle_1 {
+  left: 50%;
+  animation: ringAnimation 7s linear infinite alternate;
+}
+
+.circle_2 {
+  right: 50%;
+  animation: ringAnimation 4s linear infinite;
+}
+
+@keyframes ringAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .circle {
+    width: 9rem;
+    height: 9rem;
+  }
+}
