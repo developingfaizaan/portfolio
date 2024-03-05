@@ -2,6 +2,7 @@ const homePageProjects = [
     {
         name: 'JS Mastery Pro',
         slug: 'jsm-mastery-pro',
+        link: 'https://www.jsmastery.pro/',
         img: {
             src: '/images/projects-thumbnails/jsmpro.png',
             width: '530',
@@ -12,6 +13,7 @@ const homePageProjects = [
     {
         name: 'Adidas World Cup',
         slug: 'adidasworldcup',
+        link: 'https://imgur.com/a/T4bqO8s',
         img: {
             src: '/images/projects-thumbnails/adidas.png',
             width: '530',
@@ -20,10 +22,11 @@ const homePageProjects = [
         tags: ["UI/UX Design", "Branding", "Graphic Design"]
     },
     {
-        name: 'Apollo',
-        slug: 'apollo',
+        name: 'Emovi Produkcija',
+        slug: 'emovi',
+        link: 'https://emovi-dev.vercel.app/',
         img : {
-            src: '/images/projects-thumbnails/apollo.png',
+            src: '/images/projects-thumbnails/emovi.png',
             width: '530',
             height: '390'
         },
@@ -32,6 +35,7 @@ const homePageProjects = [
     {
         name: 'Legali',
         slug: 'legali',
+        link: 'https://www.legali.ai/',
         img : {
             src: '/images/projects-thumbnails/legali.png',
             width: '530',

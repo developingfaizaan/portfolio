@@ -10,7 +10,7 @@ const Work = ({projects, home}) => {
         {projects.map((project) =>(
           <div className='flex flex-col mb-16'>
             <Image src={project.img.src} className='rounded-lg' alt={project.name} width={project.img.width} height={project.img.height} />
-            <Link href={`work/${project.slug}`}>
+            <Link href={project.link} target='_blank'>
               <h2 className='text-white text-3xl my-4 font-bold'>{project.name}</h2>
             </Link>
             <aside className="flex gap-2">
